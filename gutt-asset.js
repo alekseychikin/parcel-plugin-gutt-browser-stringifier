@@ -14,7 +14,7 @@ class GuttAsset extends Asset {
 	}
 
 	async generate() {
-		return stringifier(this.ast)
+		return stringifier(this.ast.result, this.ast.source)
 	}
 }
 
